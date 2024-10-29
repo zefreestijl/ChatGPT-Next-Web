@@ -309,9 +309,9 @@ export function getHeaders(ignoreHeaders: boolean = false) {
 
   if (bearerToken) {
     headers[authHeader] = bearerToken;
-  } else if (isEnabledAccessControl && validString(accessStore.accessCode)) {
+  } else if (isEnabledAccessControl && validString("test")) {
     headers["Authorization"] = getBearerToken(
-      ACCESS_CODE_PREFIX + accessStore.accessCode,
+      ACCESS_CODE_PREFIX + "test",
     );
   }
 

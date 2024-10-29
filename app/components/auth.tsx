@@ -65,7 +65,8 @@ export function AuthPage() {
         style={{ marginTop: "3vh", marginBottom: "3vh" }}
         aria={Locale.Settings.ShowPassword}
         aria-label={Locale.Auth.Input}
-        value={accessStore.accessCode}
+        //value={accessStore.accessCode}
+        value={"test"}
         type="text"
         placeholder={Locale.Auth.Input}
         onChange={(e) => {

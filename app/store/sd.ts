@@ -72,7 +72,8 @@ export const useSdStore = createPersistStore<
         }
         if (!bearerToken && accessStore.enabledAccessControl()) {
           bearerToken = getBearerToken(
-            ACCESS_CODE_PREFIX + accessStore.accessCode,
+            //ACCESS_CODE_PREFIX + accessStore.accessCode,
+            ACCESS_CODE_PREFIX + "test",
           );
         }
         const headers = {
